@@ -23,6 +23,14 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
 ou
 wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
 
+Se o nvm não ficar como um comando reconhecido, mesmo após fechar e reabrir o terminal, verifique no seu arquivo de cofiguração de terminal, por exemplo o ~/.bashrc (veja com more ~/.bashrc)  se no final você tem as linhas:
+
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+
 Brew:
 For brew users, OSX:
 
